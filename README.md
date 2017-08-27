@@ -1,28 +1,14 @@
-# ClientPanel
+# Client Panel
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.0.
+This project is an angular app that uses multiple components to simulate a client management panel with examples of nested components and aggregate functions.  This app is created as part of Lesson 9 of the Udemy Course [Angular 4 Front to Back](https://www.udemy.com/angular-4-front-to-back) which I highly recommend.
 
-## Development server
+This code is being kept around mostly for my own reference.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Notable Changes from Course Material
 
-## Code scaffolding
+Just started, none of note yet.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Credits
+* This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.0.
+* Data services used from [Google Firebase](https://firebase.google.com/)
+* Code based on course matieral from [Brad Travesy](http://www.traversymedia.com/) with whatever other direction I take it here and there. 
