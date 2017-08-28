@@ -25,6 +25,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 
 // Service Imports
 import { ClientService } from './services/client.service';
+import { AuthService } from './services/auth.service';
 
 // Routes Setup
 const appRoutes: Routes = [
@@ -70,7 +71,8 @@ export const firebaseConfig = {
   providers: [
     ClientService,
     AngularFireAuth,
-    AngularFireDatabase
+    AngularFireDatabase,
+    AuthService
   ],
   bootstrap: [AppComponent]
 })
