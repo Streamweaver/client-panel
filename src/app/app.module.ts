@@ -27,11 +27,13 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { ClientService } from './services/client.service';
 import { AuthService } from './services/auth.service';
 import { AuthGuard } from './guards/auth.guard';
+import { SettingsService } from './services/settings.service';
+import { RegisterGuard } from './guards/register.guard';
 
 // Routes Setup
 const appRoutes: Routes = [
   {path: '', component: DashboardComponent, canActivate: [AuthGuard]},
-  {path: 'register', component: RegisterComponent},
+  {path: 'register', component: RegisterComponent , canActivate: [RegisterGuard]},
   {path: 'login', component: LoginComponent},
   {path: 'add-client', component: AddClientComponent, canActivate: [AuthGuard]},
   {path: 'client/:id', component: ClientDetailsComponent, canActivate: [AuthGuard]},
@@ -74,7 +76,9 @@ export const firebaseConfig = {
     AngularFireAuth,
     AngularFireDatabase,
     AuthService,
-    AuthGuard
+    AuthGuard,
+    SettingsService,
+    RegisterGuard
   ],
   bootstrap: [AppComponent]
 })

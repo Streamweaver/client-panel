@@ -11,10 +11,10 @@
       </li>
     </ul>
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item" *ngIf="!isLoggedIn">
+      <li class="nav-item" *ngIf="!isLoggedIn && showRegistration" >
         <a class="nav-link" href="#" routerLink="/register">Register</a>
       </li>
-      <li class="nav-item" *ngIf="!isLoggedIn">
+      <li class="nav-item" *ngIf="!isLoggedIn && showRegistration">
         <a class="nav-link" href="#" routerLink="/login">Login</a>
       </li>
       <li class="nav-item" *ngIf="isLoggedIn">
